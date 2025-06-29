@@ -3,34 +3,114 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Jacob Fox | Film Composer</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Jacob Fox - Composer Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #131d4f; /* Dark blue */
+      color: #efe4d2; /* Light cream */
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 40px;
+      background: #254d70; /* Medium blue */
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav a {
+      color: #efe4d2;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #954c2e; /* Accent orange */
+    }
+    .hero {
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: url('your-background.jpg') no-repeat center center/cover;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px #000;
+    }
+    .hero p {
+      font-size: 1.2em;
+      max-width: 600px;
+      text-shadow: 1px 1px 2px #000;
+    }
+    section {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h3 {
+      border-bottom: 2px solid #954c2e;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #254d70;
+      color: #efe4d2;
+    }
+    /* Responsive nav */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav a {
+        margin: 10px;
+      }
+      .hero h2 {
+        font-size: 2em;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header class="hero">
+  <header>
     <h1>Jacob Fox</h1>
-    <p>Film Composer | Sound Designer</p>
-    <a href="#projects" class="btn">Listen to My Work</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#music">Music</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
-
-  <section id="projects" class="projects">
-    <h2>Projects</h2>
-    <p>Coming soon: exciting music and film projects.</p>
+  <section class="hero">
+    <h2>Film & Media Composer</h2>
+    <p>Crafting immersive soundscapes and memorable themes.</p>
   </section>
-
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>I am Jacob Fox, a film composer passionate about crafting cinematic soundscapes. My portfolio will grow with future projects.</p>
+  <section id="about">
+    <h3>About Me</h3>
+    <p>I’m Jacob Fox, a composer passionate about creating music that tells a story. Currently building my portfolio with exciting projects on the horizon.</p>
   </section>
-
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:jacob.fox@example.com">jacob.fox@example.com</a></p>
-    <p>Follow me on <a href="#">Social Media</a></p>
+  <section id="music">
+    <h3>Music</h3>
+    <p>Coming soon: demos, scores, and collaborations.</p>
   </section>
-
+  <section id="news">
+    <h3>News</h3>
+    <p>Stay tuned for updates on upcoming projects and releases.</p>
+  </section>
+  <section id="contact">
+    <h3>Contact</h3>
+    <p>Email me at <a href="mailto:me@jacobfoxmusic.com">me@jacobfoxmusic.com</a> for inquiries or collaborations.</p>
+  </section>
   <footer>
-    <p>&copy; 2025 Jacob Fox</p>
+    &copy; 2025 Jacob Fox. All rights reserved.
   </footer>
 </body>
 </html>
