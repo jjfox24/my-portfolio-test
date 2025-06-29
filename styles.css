@@ -1,0 +1,82 @@
+
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #131D4F;
+  background-color: #EFE4D2;
+}
+
+body {
+  line-height: 1.6;
+}
+
+/* Hero section */
+.hero {
+  background-color: #131D4F;
+  color: #EFE4D2;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background-color: #254D70;
+  color: #EFE4D2;
+  padding: 0.8rem 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #954C2E;
+}
+
+/* Sections */
+section {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 20px;
+}
+
+h2 {
+  color: #254D70;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #131D4F;
+  color: #EFE4D2;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero p {
+    font-size: 1.2rem;
+  }
+}
