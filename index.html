@@ -77,6 +77,26 @@
         font-size: 2em;
       }
     }
+    /* Video container for responsive embed */
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      background: #000; /* black background */
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      margin-top: 20px;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body>
@@ -100,6 +120,14 @@
   <section id="music">
     <h3>Music</h3>
     <p>Coming soon: demos, scores, and collaborations.</p>
+    <div class="video-container">
+      <iframe
+        src="https://www.youtube.com/embed/hY3DKvAE0XE?controls=1&modestbranding=1&rel=0&iv_load_policy=3"
+        allow="autoplay; encrypted-media"
+        allowfullscreen
+        title="Composer Reel"
+      ></iframe>
+    </div>
   </section>
   <section id="news">
     <h3>News</h3>
@@ -114,3 +142,4 @@
   </footer>
 </body>
 </html>
+
